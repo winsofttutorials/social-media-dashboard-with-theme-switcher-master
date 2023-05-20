@@ -16,12 +16,12 @@
 
   --Facebook: hsl(208, 92%, 53%);
   --Twitter: hsl(203, 89%, 53%);
-  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --Instagram: linear-gradient(to right, #fdc468, #df4996);
   --YouTube: hsl(348, 97%, 39%);
 
   /* ---------------#### Dark Theme------------------- */
-
-  --Toggle-1: linear gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
+  /* linear gradient */
+  --toggle-1: linear-gradient(to right, #378fe6, #3eda82);
 
   /* ####------------------- Light Theme -----------------*/
 
@@ -37,6 +37,7 @@
   --Very-Dark-Blue-2: hsl(232, 19%, 15%);
   /* (Card BG) */
   --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+  --Dark-Desaturated-Blue-1: hsl(228, 34%, 66%, 0.14);
   /*  */
   --Desaturated-Blue: hsl(228, 34%, 66%);
   /* (Text) */
@@ -59,6 +60,7 @@
 }
 
 #darkTheme {
+  background-color: var(--Light-Grayish-Blue);
 }
 body {
   font-family: "Inter", sans-serif;
@@ -81,13 +83,19 @@ main {
 
 .mainContent {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 90vh;
-  background-color: var(--Very-Dark-Blue-2);
+  min-height: 100vh;
+  /* background-color: var(--Very-Dark-Blue-2); */
   width: 80%;
-  padding: 30px 30px;
+  padding: 0px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainFrame {
+  width: 100%;
 }
 
 /* ----------------Header Section-------------- */
@@ -96,6 +104,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -124,13 +133,13 @@ main {
   width: 55px;
   height: 25px;
   border-radius: 20px;
-  background-color: var(--Toggle-1);
+  background: var(--toggle-1);
   display: inline-flex;
   align-items: center;
   padding: 4px;
   margin-left: 10px;
   cursor: pointer;
-  transition: padding-left 0.5s background 0.5s;
+  transition: padding-left 0.5s, background 0.5s;
 }
 
 #toggleBtn span {
@@ -143,7 +152,163 @@ main {
 
 #toggleBtn.toggleLeft {
   padding-left: 30px;
-  background-color: var(--Toggle-2);
+  background: var(--Toggle-2);
+}
+
+/* ------------------SOCIAL FOLLOWERS-------------- */
+
+.socialCubeFrame {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.socialCube1 {
+  background-color: var(--Dark-Desaturated-Blue);
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.socialCube1:hover {
+  background-color: var(--Dark-Desaturated-Blue-1);
+}
+
+.topColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--Facebook);
+}
+
+.insta {
+  background: var(--Instagram);
+}
+
+.youtube {
+  background-color: var(--YouTube);
+}
+
+.socialHandle {
+  margin: 20px 0 15px;
+  display: flex;
+  align-items: center;
+  color: var(--Desaturated-Blue);
+  font-size: 10px;
+}
+
+.socialHandle img {
+  width: 12px;
+  margin-right: 5px;
+}
+
+.followerSize {
+  color: var(--White);
+  font-size: 32px;
+}
+
+.follows {
+  text-transform: uppercase;
+  color: var(--Desaturated-Blue);
+  font-size: 8px;
+  font-family: "inter";
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+  color: var(--Lime-Green);
+  font-family: "Inter";
+}
+
+.downTrend {
+  color: var(--Bright-Red);
+  font-family: "Inter";
+}
+
+.stats img {
+  width: 8px;
+  margin-right: 4px;
+  margin-top: 2px;
+}
+
+/* ---------------------OverView Section---------------- */
+
+.overViewSection {
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.overViewSection .title {
+  margin-bottom: 15px;
+}
+
+.overViewFrame {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.overView1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--Dark-Desaturated-Blue);
+  border-radius: 4px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.overView1:hover {
+  background-color: var(--Dark-Desaturated-Blue-1);
+}
+
+.topView,
+.baseView {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topView {
+  margin-bottom: 20px;
+}
+.pageViews {
+  font-size: 9px;
+  color: var(--Desaturated-Blue);
+}
+
+.topView img {
+  width: 12px;
+}
+
+.parcentageView {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  color: var(--Lime-Green);
+}
+
+.baseView .downTrend {
+  color: var(--Bright-Red);
+}
+
+.numberviews {
+  color: var(--White);
 }
 
 /* ------------------FOOTER-------------------- */

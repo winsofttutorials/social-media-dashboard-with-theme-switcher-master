@@ -19,28 +19,187 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <div class="hero"></div>
+    <main id="mainSection">
+      <div class="hero" id="heroSection"></div>
       <div class="mainContent">
-        <div class="header">
-          <div class="leftside">
-            <h1 class="title">Social Media Dashboard</h1>
-            <p class="followers">Total Followers: 23,004</p>
-          </div>
-          <div class="rightside">
-            <p class="modeInfo">Dark Mode</p>
-            <div id="toggleBtn" onclick="toggleIcon()">
-              <span></span>
+        <div class="mainFrame">
+          <div class="header">
+            <div class="leftside">
+              <h1 class="title">Social Media Dashboard</h1>
+              <p class="followers">Total Followers: 23,004</p>
+            </div>
+            <div class="rightside">
+              <p class="modeInfo">Dark Mode</p>
+              <div id="toggleBtn" onclick="toggleIcon()">
+                <span id="slideIcon"></span>
+              </div>
             </div>
           </div>
+          <section>
+            <div class="socialCubeFrame">
+              <div class="socialCube1">
+                <span class="topColor"></span>
+                <p class="socialHandle">
+                  <img src="./images/icon-facebook.svg" alt="socialIcon" />
+                  <span>@nathanf</span>
+                </p>
+                <h1 class="followerSize">1987</h1>
+                <p class="follows">Followers</p>
+                <b class="stats"
+                  ><img src="./images/icon-up.svg" alt="upTrend" />12 Today</b
+                >
+              </div>
+              <div class="socialCube1">
+                <span class="topColor"></span>
+                <p class="socialHandle">
+                  <img src="./images/icon-twitter.svg" alt="socialIcon" />
+                  <span>@nathanf</span>
+                </p>
+                <h1 class="followerSize">1044</h1>
+                <p class="follows">Followers</p>
+                <b class="stats"
+                  ><img src="./images/icon-up.svg" alt="upTrend" />99 Today</b
+                >
+              </div>
+              <div class="socialCube1">
+                <span class="topColor insta"></span>
+                <p class="socialHandle">
+                  <img src="./images/icon-instagram.svg" alt="socialIcon" />
+                  <span>@realnathanf</span>
+                </p>
+                <h1 class="followerSize">11k</h1>
+                <p class="follows">Followers</p>
+                <b class="stats"
+                  ><img src="./images/icon-up.svg" alt="socialIcon" />1099
+                  Today</b
+                >
+              </div>
+              <div class="socialCube1">
+                <span class="topColor youtube"></span>
+                <p class="socialHandle">
+                  <img src="./images/icon-youtube.svg" alt="socialIcon" />
+                  <span>Nathan F.</span>
+                </p>
+                <h1 class="followerSize">8239</h1>
+                <p class="follows">Subscribers</p>
+                <b class="stats downTrend"
+                  ><img src="./images/icon-down.svg" alt="" />144 Today</b
+                >
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="overViewSection">
+              <h1 class="title">Overview - Today</h1>
+              <div class="overViewFrame">
+                <div class="overView1">
+                  <div class="topView">
+                    <p class="pageViews">Page Views</p>
+                    <img src="./images/icon-facebook.svg" alt="" />
+                  </div>
+                  <div class="baseView">
+                    <h3 class="numberviews">87</h3>
+                    <p class="parcentageView">
+                      <img src="./images/icon-up.svg" alt="upTrend" /> 3%
+                    </p>
+                  </div>
+                </div>
+                <div class="overView1">
+                  <div class="topView">
+                    <p class="pageViews">Likes</p>
+                    <img src="./images/icon-facebook.svg" alt="facebook" />
+                  </div>
+                  <div class="baseView">
+                    <h3 class="numberviews">52</h3>
+                    <p class="parcentageView downTrend">
+                      <img src="./images/icon-down.svg" alt="downTrend" /> 2%
+                    </p>
+                  </div>
+                </div>
+                <div class="overView1">
+                  <div class="topView">
+                    <p class="pageViews">Likes</p>
+                    <img src="./images/icon-instagram.svg" alt="instagram" />
+                  </div>
+                  <div class="baseView">
+                    <h3 class="numberviews">5462</h3>
+
+                    <p class="parcentageView">
+                      <img src="./images/icon-up.svg" alt="upTrend" /> 2257%
+                    </p>
+                  </div>
+                </div>
+                <div class="overView1">
+                  <div class="topView">
+                    <p class="pageViews">Profile Views</p>
+                    <img src="./images/icon-instagram.svg" alt="instagram" />
+                  </div>
+                  <div class="baseView">
+                    <h3 class="numberviews">52k</h3>
+
+                    <p class="parcentageView">
+                      <img src="./images/icon-up.svg" alt="upTrend" /> 1375%
+                    </p>
+                  </div>
+                </div>
+                <div class="overView1">
+                  <div class="topView">
+                    <p class="pageViews">Retweets</p>
+                    <img src="./images/icon-twitter.svg" alt="twitter" />
+                  </div>
+                  <div class="baseView">
+                    <h3 class="numberviews">117</h3>
+                    <p class="parcentageView">
+                      <img src="./images/icon-up.svg" alt="upTrend" /> 303%
+                    </p>
+                  </div>
+                </div>
+
+                <div class="overView1">
+                  <div class="topView">
+                    <p class="pageViews">Likes</p>
+                    <img src="./images/icon-twitter.svg" alt="twitter" />
+                  </div>
+                  <div class="baseView">
+                    <h3 class="numberviews">507</h3>
+
+                    <p class="parcentageView">
+                      <img src="./images/icon-up.svg" alt="upTrend" /> 553%
+                    </p>
+                  </div>
+                </div>
+                <div class="overView1">
+                  <div class="topView">
+                    <p class="pageViews">Likes</p>
+                    <img src="./images/icon-youtube.svg" alt="youtube" />
+                  </div>
+                  <div class="baseView">
+                    <h3 class="numberviews">107</h3>
+
+                    <p class="parcentageView downTrend">
+                      <img src="./images/icon-down.svg" alt="downTrend" /> 19%
+                    </p>
+                  </div>
+                </div>
+                <div class="overView1">
+                  <div class="topView">
+                    <p class="pageViews">Total Views</p>
+                    <img src="./images/icon-youtube.svg" alt="youtube" />
+                  </div>
+                  <div class="baseView">
+                    <h3 class="numberviews">1407</h3>
+
+                    <p class="parcentageView downTrend">
+                      <img src="./images/icon-down.svg" alt="downTrend" /> 12%
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </main>
-    @nathanf 1987 Followers 12 Today @nathanf 1044 Followers 99 Today
-    @realnathanf 11k Followers 1099 Today Nathan F. 8239 Subscribers 144 Today
-    Overview - Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views
-    52k 1375% Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407
-    12%
 
     <footer>
       <div class="attribution">

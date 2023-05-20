@@ -1,14 +1,18 @@
 var toggleBtn = document.getElementById("toggleBtn");
 var slideBtn = document.getElementById("slideIcon");
+var heroSection = document.getElementById("heroSection");
+var mainSection = document.getElementById("mainSection");
+var socialCube1 = document.getElementsByClassName("socialCube1");
+var overView1 = document.getElementsByClassName('"overView1');
+
+let i = false;
 function toggleIcon() {
   toggleBtn.classList.toggle("toggleLeft");
-  let i = 2;
-  if (!i == 1) {
-    slideBtn.style.backgroundColor = "green";
-    i++;
-    return false;
+  if (!i) {
+    i = true;
+    slideBtn.style.backgroundColor = "var(--White)";
   } else {
-    slideBtn.style.backgroundColor = "white";
-    return true;
+    slideBtn.style.backgroundColor = "var(--Very-Dark-Blue-2)";
+    i = false;
   }
 }

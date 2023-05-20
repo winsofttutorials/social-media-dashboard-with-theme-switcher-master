@@ -8,11 +8,13 @@ var overView1 = document.getElementsByClassName('"overView1');
 let i = false;
 function toggleIcon() {
   toggleBtn.classList.toggle("toggleLeft");
+  document.body.classList.toggle("lightTheme");
   if (!i) {
     i = true;
     slideBtn.style.backgroundColor = "var(--White)";
   } else {
     slideBtn.style.backgroundColor = "var(--Very-Dark-Blue-2)";
+
     i = false;
   }
 }

@@ -45,45 +45,42 @@
 
   /* --------------------- #### Light Theme---------------*/
 
-  /* (BG) */
-  --White: hsl(0, 0%, 100%);
-  /* (Top BG Pattern) */
-  --Very-Pale-Blue: hsl(225, 100%, 98%);
-  /* (Card BG) */
-  --Light-Grayish-Blue: hsl(227, 47%, 96%);
-  /* (Text) */
-  --Dark-Grayish-Blue: hsl(228, 12%, 44%);
-  /* (Text) */
-  --Very-Dark-Blue-1: hsl(230, 17%, 14%);
-
   --Font-size-overCardHeadings: 14px;
 }
 
-#darkTheme {
-  background-color: var(--Light-Grayish-Blue);
+.lightTheme {
+  /* (Top BG Pattern) */
+  --Very-Dark-Blue-1: hsl(0, 0%, 100%);
+  --Very-Dark-Blue-2: hsl(225, 100%, 98%);
+  --Very-Pale-Blue-2: hsl(225, 100%, 98%);
+  /* (Card BG) */
+  --Dark-Desaturated-Blue: hsl(227, 47%, 96%);
+  --Dark-Desaturated-Blue-1: hsl(228, 12%, 93%);
+  /* (Text) */
+  --Desaturated-Blue: hsl(228, 12%, 44%);
+  /* (Text) */
+  --White: hsl(230, 17%, 14%);
+  --Font-size-overCardHeadings: 14px;
 }
 body {
   font-family: "Inter", sans-serif;
   min-height: 100vh;
-}
-
-main {
-  min-height: 100vh;
-  background-color: var(--Very-Dark-Blue-1);
+  width: 100%;
   position: relative;
+  background-color: var(--Very-Dark-Blue-1);
 }
 
 .hero {
   width: 100%;
-  height: 180px;
-  background-color: var(--Dark-Desaturated-Blue);
+  min-height: 250px;
+  background-color: var(--Very-Dark-Blue-2);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
 }
 
 .mainContent {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-height: 100vh;
@@ -93,6 +90,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .mainFrame {
   width: 100%;
@@ -147,7 +145,7 @@ main {
   height: 18px;
   border-radius: 50%;
   background-color: var(--Very-Dark-Blue-2);
-  display: inline;
+  display: inline-block;
 }
 
 #toggleBtn.toggleLeft {
@@ -232,6 +230,7 @@ main {
   font-size: 8px;
   color: var(--Lime-Green);
   font-family: "Inter";
+  font-weight: 700;
 }
 
 .downTrend {
@@ -282,6 +281,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 700;
 }
 
 .topView {
@@ -315,7 +315,54 @@ main {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--White);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--White);
+}
+
+/* ---------------------Media Queries------------- */
+
+@media (max-width: 375px) {
+  .mainContent {
+    top: 70%;
+    padding: 20px 20px;
+    width: 100%;
+    display: unset;
+  }
+
+  .header {
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  .leftside {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--Desaturated-Blue);
+  }
+
+  .leftside .title {
+    font-size: 25px;
+  }
+
+  .followers {
+    font-size: 14px;
+  }
+
+  .rightside {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .modeInfo {
+    font-size: 14px;
+  }
+  .socialCubeFrame,
+  .overViewFrame {
+    grid-template-columns: 1fr;
+  }
 }

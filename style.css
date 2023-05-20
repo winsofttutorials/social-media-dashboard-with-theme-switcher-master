@@ -325,7 +325,7 @@ body {
 
 @media (max-width: 375px) {
   .mainContent {
-    top: 70%;
+    top: 115%;
     padding: 20px 20px;
     width: 100%;
     display: unset;

@@ -11,10 +11,9 @@ function toggleIcon() {
   document.body.classList.toggle("lightTheme");
   if (!i) {
     i = true;
-    slideBtn.style.backgroundColor = "var(--White)";
+    slideBtn.style.backgroundColor = "#fff";
   } else {
     slideBtn.style.backgroundColor = "var(--Very-Dark-Blue-2)";
-
     i = false;
   }
 }

@@ -76,6 +76,9 @@ body {
   background-color: var(--Very-Dark-Blue-2);
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .mainContent {
@@ -325,10 +328,13 @@ body {
 
 @media (max-width: 375px) {
   .mainContent {
-    top: 115%;
+    top: 70%;
     padding: 20px 20px;
     width: 100%;
-    display: unset;
+  }
+
+  .hero {
+    /* background-color: #fff; */
   }
 
   .header {

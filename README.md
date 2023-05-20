@@ -95,4 +95,4 @@ API adding for live update
 
 ## Acknowledgments
 
-Specials thanks to @Avinash and to my Mum for her constant motivations and aslo to everyone who has or is about to attempt this.
+Specials thanks to @Avinash and to my Mum for her constant motivations and also to everyone who has or is about to attempt this.

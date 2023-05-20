@@ -328,7 +328,7 @@ main {
 
 /* ---------------------Media Queries------------- */
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .mainContent {
     top: 70%;
     padding: 20px 20px;
